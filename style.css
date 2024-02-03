@@ -1,8 +1,6 @@
 /* CSS version of https://dribbble.com/shots/2163674-Floppy-Disk-Friends */
-
-
 body {
-  background-color: pink;
+  background-color: #D9EABA;
   font-family: Helvetica;
   font-weight: 200;
   margin-top: 50px;
@@ -22,99 +20,111 @@ body {
   height: 200px;
   position: relative;
   min-width: 210px;
-  
-  &--green {
-    background-color: #C7E07F;
-    > .floppy-disk { background-color: #9CCF81; }
-    > .floppy-disk:after {  background-color: #C7E07F; }
-  }
-  
-  &--pink {
-    background-color: #E8768A;
-    
-    > .floppy-disk { background-color: #B94C6B; }
-    > .floppy-disk:after { background-color: #E8768A; }
-  }
-  
-  &-disk {
-    border: 3px solid #60615F;
-    border-top: none;
-    border-radius: 3px;
-    height: 60px;
-    max-width: 70%;
-    margin: 0 auto;
-    position: relative;
-    
-    &:before {
-      background-color: #E4E5E6;
-      border: 2px solid #60615F;
-      border-radius: 3px;
-      bottom: -3%;
-      content: '';
-      display: block;
-      height: 104%;
-      left: 20px;
-      position: absolute;
-      width: 80%;
-    }
-    
-    &:after {
-      background: red;
-      border: 2px solid #60615F;
-      border-radius: 5px;
-      bottom: 5px;
-      content: '';
-      display: block;
-      height: 80%;
-      right: 15px;
-      position: absolute;
-      width: 20%;
-    }
-  }
-  
-  &-label {
-    background-color: #F0E3CA;
-    border: 2px solid #60615F;
-    border-radius: 10px;
-    bottom: 3px;
-    left: 0;
-    height: 100px;
-    margin: 0 auto;
-    max-width: 70%;
-    position: absolute;
-    right: 0;
-    
-    &:before, &:after {
-      background-color: #60615F;
-      border-radius: 50%;
-      content: '';
-      display: block;
-      height: 5px;
-      position: absolute;
-      top: 50%;
-      width: 5px;
-    }
-    
-    &:before {
-      left: 30%;
-    }
-    
-    &:after {
-      right: 30%;
-    }
-  }
-  
-  &-reaction {
-    border: 2px solid #60615F;
-    border-radius: 10px 10px 0 0;
-    bottom: 30%;
-    height: 5px;
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    width: 10px;
-  }
+}
+
+.floppy--green {
+  background-color: #C7E07F;
+}
+
+.floppy--green .floppy-disk {
+  background-color: #9CCF81;
+}
+
+.floppy--green .floppy-disk:after {
+  background-color: #C7E07F;
+}
+
+.floppy--pink {
+  background-color: #E8768A;
+}
+
+.floppy--pink .floppy-disk {
+  background-color: #B94C6B;
+}
+
+.floppy--pink .floppy-disk:after {
+  background-color: #E8768A;
+}
+
+.floppy-disk {
+  border: 3px solid #60615F;
+  border-top: none;
+  border-radius: 3px;
+  height: 60px;
+  max-width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.floppy-disk:before {
+  background-color: #E4E5E6;
+  border: 2px solid #60615F;
+  border-radius: 3px;
+  bottom: -3%;
+  content: '';
+  display: block;
+  height: 104%;
+  left: 20px;
+  position: absolute;
+  width: 80%;
+}
+
+.floppy-disk:after {
+  background: red;
+  border: 2px solid #60615F;
+  border-radius: 5px;
+  bottom: 5px;
+  content: '';
+  display: block;
+  height: 80%;
+  right: 15px;
+  position: absolute;
+  width: 20%;
+}
+
+.floppy-label {
+  background-color: #F0E3CA;
+  border: 2px solid #60615F;
+  border-radius: 10px;
+  bottom: 3px;
+  left: 0;
+  height: 100px;
+  margin: 0 auto;
+  max-width: 70%;
+  position: absolute;
+  right: 0;
+}
+
+.floppy-label:before,
+.floppy-label:after {
+  background-color: #60615F;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  width: 5px;
+}
+
+.floppy-label:before {
+  left: 30%;
+}
+
+.floppy-label:after {
+  right: 30%;
+}
+
+.floppy-reaction {
+  border: 2px solid #60615F;
+  border-radius: 10px 10px 0 0;
+  bottom: 30%;
+  height: 5px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 10px;
 }
 
 .happy-valentines {
@@ -128,6 +138,7 @@ body {
     border-radius: 0 0 10px 10px;
   }
 
-  .happy-valentines { display: block; }
+  .happy-valentines {
+    display: block;
+  }
 }
-
