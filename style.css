@@ -1,8 +1,8 @@
 /* CSS version of https://dribbble.com/shots/2163674-Floppy-Disk-Friends */
-$background-color: #D9EABA;
+
 
 body {
-  background-color: $background-color;
+  background-color: pink;
   font-family: Helvetica;
   font-weight: 200;
   margin-top: 50px;
